@@ -1,5 +1,3 @@
-import { Link, Route, Switch } from 'wouter'
-import React from 'react'
 import NavLink from './NavLink'
 import '../../styles/Nav.css'
 
