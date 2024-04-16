@@ -1,3 +1,4 @@
+import { Link } from 'wouter'
 import '../../styles/Nav.css'
 
 type NavLinkProps = {
@@ -8,7 +9,7 @@ type NavLinkProps = {
 function NavLink({ targetUrl = '#', text = 'Link' }: NavLinkProps) {
   return (
     <div className='navLink'>
-      <a href={targetUrl}>{text}</a>
+      <Link href={targetUrl}>{text}</Link>
     </div>
   )
 }
