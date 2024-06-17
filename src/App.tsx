@@ -5,6 +5,8 @@ import ContactsPage from './pages/ContactsPage'
 import PortfolioPage from './pages/PortfolioPage'
 import CenteredHeader from './components/CentertedHeader'
 import { Route, Switch } from 'wouter'
+import BlockyParkourPage from './pages/portfolio/BlockyParkourPage'
+import { PATH_BLOCKY_PARKOUR, PATH_PORTFOLIO } from './Constants'
 
 function App() {
   return (
@@ -12,7 +14,11 @@ function App() {
       <Nav />
       <Switch>
         <Route path='/' component={LandingPage} />
-        <Route path='/portfolio' component={PortfolioPage} />
+        <Route path={`/${PATH_PORTFOLIO}`} component={PortfolioPage} />
+        <Route
+          path={`/${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
+          component={BlockyParkourPage}
+        />
         <Route path='/contacts' component={ContactsPage} />
         <Route>
           <CenteredHeader text='404: no such page' />

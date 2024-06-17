@@ -1,7 +1,15 @@
-function PortfolioCard() {
+type PortfolioCardProps = {
+  title: string
+  href: string
+}
+
+function PortfolioCard({
+  title = 'Portfolio card',
+  href = '#',
+}: PortfolioCardProps) {
   return (
     <div className='portfolio-card'>
-      <a>card!</a>
+      <a href={href}>{title}</a>
     </div>
   )
 }
