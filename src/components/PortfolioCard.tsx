@@ -8,9 +8,8 @@ function PortfolioCard({
   href = '#',
 }: PortfolioCardProps) {
   return (
-    <div className='portfolio-card'>
-      <a href={href}>{title}</a>
-    </div>
+      <div className='portfolio-card'><a href={href}>
+        {title}</a></div>
   )
 }
 

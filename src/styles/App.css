@@ -9,11 +9,26 @@
 
 .portfolio-grid {
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  align-items: center;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: start;
+  align-items: start;
 }
 
 .portfolio-card {
-  
+  display: flex;
+  flex: 1 1 auto;
+  height: 150px;
+  width: 30%;
+  max-width: 30%;
+  border: 1px solid #a7a7a7;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.portfolio-card a {
+  display: flex;
+  flex: 1 1 auto;
 }

@@ -8,6 +8,22 @@ function PortfolioPage() {
         title='Blocky Parkour'
         href={`${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
       />
+      <PortfolioCard
+        title='Blocky Parkour'
+        href={`${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
+      />
+      <PortfolioCard
+        title='Blocky Parkour'
+        href={`${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
+      />{' '}
+      <PortfolioCard
+        title='Blocky Parkour'
+        href={`${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
+      />
+      <PortfolioCard
+        title='Blocky Parkour'
+        href={`${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
+      />
     </div>
   )
 }

@@ -7,6 +7,7 @@ import CenteredHeader from './components/CentertedHeader'
 import { Route, Switch } from 'wouter'
 import BlockyParkourPage from './pages/portfolio/BlockyParkourPage'
 import { PATH_BLOCKY_PARKOUR, PATH_PORTFOLIO } from './Constants'
+import SkillsetPage from './pages/SkillsetPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path='/' component={LandingPage} />
+        <Route path='/skillset' component={SkillsetPage} />
         <Route path={`/${PATH_PORTFOLIO}`} component={PortfolioPage} />
         <Route
           path={`/${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}

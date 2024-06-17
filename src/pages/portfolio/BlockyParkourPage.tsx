@@ -1,8 +1,19 @@
-import CenteredHeader from "../../components/CentertedHeader"
-
 function BlockyParkourPage() {
   return (
-    <CenteredHeader text="Sorry nothing :(" />
+    <div>
+      <center>
+        <iframe
+          src='https://itch.io/embed/2181483'
+          width='552'
+          height='167'
+          frameBorder='0'
+        >
+          <a href='https://utkabulka.itch.io/blocky-parkour'>
+            Blocky Parkour by UtkaBulka
+          </a>
+        </iframe>
+      </center>
+    </div>
   )
 }
 
