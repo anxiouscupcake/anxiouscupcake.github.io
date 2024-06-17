@@ -1,8 +1,8 @@
 import './styles/App.css'
 import Nav from './components/menu/Nav'
-import Landing from './pages/Landing'
-import Contacts from './pages/Contacts'
-import Portfolio from './pages/Portfolio'
+import LandingPage from './pages/LandingPage'
+import ContactsPage from './pages/ContactsPage'
+import PortfolioPage from './pages/PortfolioPage'
 import CenteredHeader from './components/CentertedHeader'
 import { Route, Switch } from 'wouter'
 
@@ -11,9 +11,9 @@ function App() {
     <>
       <Nav />
       <Switch>
-        <Route path='/' component={Landing} />
-        <Route path='/portfolio' component={Portfolio} />
-        <Route path='/contacts' component={Contacts} />
+        <Route path='/' component={LandingPage} />
+        <Route path='/portfolio' component={PortfolioPage} />
+        <Route path='/contacts' component={ContactsPage} />
         <Route>
           <CenteredHeader text='404: no such page' />
         </Route>

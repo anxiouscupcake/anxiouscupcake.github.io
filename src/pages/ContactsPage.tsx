@@ -1,7 +1,7 @@
 import CenteredHeader from '../components/CentertedHeader'
 
-function Landing() {
+function ContactsPage() {
   return <CenteredHeader text='Work in progress' />
 }
 
-export default Landing
+export default ContactsPage

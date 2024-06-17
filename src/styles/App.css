@@ -6,3 +6,14 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.portfolio-grid {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-card {
+  
+}
