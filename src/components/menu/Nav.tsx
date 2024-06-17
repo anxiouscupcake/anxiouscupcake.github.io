@@ -7,7 +7,7 @@ function Nav() {
     <div className='nav'>
       <NavLink text='Home' targetUrl='/' />
       <NavLink text='My skills' targetUrl='/skillset' />
-      <NavLink text='Portfolio' targetUrl={`${PATH_PORTFOLIO}`} />
+      <NavLink text='Portfolio' targetUrl={`/${PATH_PORTFOLIO}`} />
       <NavLink text='Contacts' targetUrl='/contacts' />
     </div>
   )
