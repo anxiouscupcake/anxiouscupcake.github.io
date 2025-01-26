@@ -35,10 +35,14 @@ function ResumePage() {
           <p>{PHONE_NUMBER}</p>
           <p>{LOCATION}</p>
           <p>
-            <a href={`https://${LINK_GITHUB}`}>{LINK_GITHUB}</a>
+            <a href={`https://${LINK_GITHUB}`} target='_blank'>
+              {LINK_GITHUB}
+            </a>
           </p>
           <p>
-            <a href={`https://${LINK_LINKEDIN}`}>{LINK_LINKEDIN}</a>
+            <a href={`https://${LINK_LINKEDIN}`} target='_blank'>
+              {LINK_LINKEDIN}
+            </a>
           </p>
         </div>
       </div>
