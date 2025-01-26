@@ -9,12 +9,23 @@ import {
   PHONE_NUMBER,
   SURNAME,
 } from '../../Constants'
+import { useState } from 'react'
 
-function ResumePage() {
-  let useLegalName = true
+export default function ResumePage() {
+  const [useLegalName, setUseLegalName] = useState(true)
+
+  function handleUseLegalNameChange() {
+    setUseLegalName(!useLegalName)
+  }
 
   return (
     <div className='resume'>
+      <div className='controls'>
+        <button>Download PDF</button>
+        <button onClick={handleUseLegalNameChange}>
+          {useLegalName ? 'Switch to my real name' : 'Switch to my legal name'}
+        </button>
+      </div>
       <div className='header'>
         <div className='summary-block'>
           <h1>{getFullName(useLegalName)}</h1>
@@ -53,5 +64,3 @@ function ResumePage() {
 function getFullName(isLegalName: boolean): string {
   return isLegalName ? `${LEGAL_NAME} ${SURNAME}` : `${NAME} ${SURNAME}a`
 }
-
-export default ResumePage
