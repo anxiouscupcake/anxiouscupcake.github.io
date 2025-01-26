@@ -1,5 +1,4 @@
 import './styles/App.css'
-import Nav from './components/menu/Nav'
 import ContactsPage from './pages/ContactsPage'
 import PortfolioPage from './pages/PortfolioPage'
 import CenteredHeader from './components/CentertedHeader'
@@ -11,7 +10,7 @@ import ResumePage from './pages/ResumePage'
 function App() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
         <Route path='/' component={ResumePage} />
         <Route path='/resume' component={ResumePage} />
