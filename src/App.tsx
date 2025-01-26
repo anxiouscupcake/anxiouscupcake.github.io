@@ -1,11 +1,11 @@
 import './styles/App.css'
 import ContactsPage from './pages/ContactsPage'
-import PortfolioPage from './pages/PortfolioPage'
 import CenteredHeader from './components/CentertedHeader'
 import { Route, Switch } from 'wouter'
 import BlockyParkourPage from './pages/portfolio/BlockyParkourPage'
 import { PATH_BLOCKY_PARKOUR, PATH_PORTFOLIO } from './Constants'
-import ResumePage from './pages/ResumePage'
+import ResumePage from './pages/resume/ResumePage'
+import PortfolioPage from './pages/portfolio/PortfolioPage'
 
 function App() {
   return (

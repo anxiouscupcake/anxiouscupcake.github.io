@@ -1,5 +1,6 @@
-import { PATH_BLOCKY_PARKOUR, PATH_PORTFOLIO } from '../Constants'
-import PortfolioCard from '../components/PortfolioCard'
+import PortfolioCard from "../../components/PortfolioCard"
+import { PATH_PORTFOLIO, PATH_BLOCKY_PARKOUR } from "../../Constants"
+
 
 function PortfolioPage() {
   return (
