@@ -1,21 +1,20 @@
 import './styles/App.css'
 import Nav from './components/menu/Nav'
-import LandingPage from './pages/LandingPage'
 import ContactsPage from './pages/ContactsPage'
 import PortfolioPage from './pages/PortfolioPage'
 import CenteredHeader from './components/CentertedHeader'
 import { Route, Switch } from 'wouter'
 import BlockyParkourPage from './pages/portfolio/BlockyParkourPage'
 import { PATH_BLOCKY_PARKOUR, PATH_PORTFOLIO } from './Constants'
-import SkillsetPage from './pages/SkillsetPage'
+import ResumePage from './pages/ResumePage'
 
 function App() {
   return (
     <>
       <Nav />
       <Switch>
-        <Route path='/' component={LandingPage} />
-        <Route path='/skillset' component={SkillsetPage} />
+        <Route path='/' component={ResumePage} />
+        <Route path='/resume' component={ResumePage} />
         <Route path={`/${PATH_PORTFOLIO}`} component={PortfolioPage} />
         <Route
           path={`/${PATH_PORTFOLIO}/${PATH_BLOCKY_PARKOUR}`}
