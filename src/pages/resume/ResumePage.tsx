@@ -22,7 +22,7 @@ export default function ResumePage() {
     <div>
       <div className='resume'>
         <div className='header'>
-          <div className='summary-block'>
+          <div className='summary'>
             <h1>{getFullName(useLegalName)}</h1>
             <h2>Software Engineer</h2>
             <p>
@@ -34,7 +34,7 @@ export default function ResumePage() {
               software development.
             </p>
           </div>
-          <div>
+          <div className='summary-contacts'>
             <p>
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </p>
@@ -52,6 +52,15 @@ export default function ResumePage() {
             </p>
           </div>
         </div>
+        <div className='resume-body'>
+            <div className='resume-column'>
+              <div className='resume-section'>asd</div>
+            </div>
+            <div className='resume-column'>
+              <div className='resume-section'>asd</div>
+              <div className='resume-section'>asd</div>
+            </div>
+          </div>
       </div>
       <div className='controls'>
         {/* TODO: implement PDF download */}

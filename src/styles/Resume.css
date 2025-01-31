@@ -8,16 +8,40 @@
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   gap: 24px;
 }
 
-.summary-block {
+.summary {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 8px;
 }
 
+.summary-contacts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: right;
+}
+
+.resume-body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.resume-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.resume-section {
+}
+
 p {
-  margin-top: 8px;
+  margin: 4px 0 4px 0;
 }
